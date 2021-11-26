@@ -53,3 +53,28 @@ header {
   height: 0; 
 }
 
+
+.cta-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .cta-grid-item {
+    width: 21%;
+    border: 1px solid $color-primary;
+    padding: 1%;
+    margin: 1%;
+
+    @media screen and(max-width: 1200px) {
+      width: 29%;
+    }
+
+    @media screen and(max-width: 1000px) {
+      width: 46%;
+    }
+
+    @media screen and(max-width: 768px) {
+      width: 96%;
+    }
+  }
+}

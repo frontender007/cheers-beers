@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import Accordion from './Accordion';
 import CTAGrid from './CTAGrid';
 
+
 function App() {
 
   const [beers, setBeers] = useState([]);
