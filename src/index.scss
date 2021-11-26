@@ -1,0 +1,50 @@
+$color-primary: #003366;
+$color-heading-text: #ffffee;
+$font-size-base: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  text-align: center;
+}
+
+
+header {
+  background-color: $color-primary;
+  h3 {
+    color: $color-heading-text;
+    font-size: $font-size-base * 2;
+
+  }
+}
+
+.beer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
+  padding: 2%;
+  
+  .beer {
+    text-align: center;
+    font-size: $font-size-base;
+    color: $color-primary;
+    width: 33.33%;
+      &:hover {
+        cursor: pointer;
+      }
+  }
+}
+
+
+
+
+.details {
+  display: none;
+  height: 0;
+  transition: height 0.5s ease-in-ou;
+}
