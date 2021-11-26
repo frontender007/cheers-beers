@@ -5,7 +5,7 @@ const AccordionItem = ({handleClick, name, tagline, first_brewed, description}) 
             <h2>{name}</h2>
             <div className="details">
                 <h4>{tagline}</h4>
-                <h6>{first_brewed}</h6>
+                <h4>{first_brewed}</h4>
                 <p>{description}</p>
             </div>
         </div>

@@ -1,26 +1,12 @@
-import {useState, useEffect} from 'react';
+
 import AccordionItem from './AccordionItem';
 
 
-const Accordion = () => {
+const Accordion = ({beersArray}) => {
 
-    const [beers, setBeers] = useState([]);
-    useEffect( () => {
-        const fetchData = async () => {
-            const response = await fetch('https://api.punkapi.com/v2/beers?per_page=3');
-            if (response.ok) {
-                const data = await response.json();
-                setBeers(data);  
-            } else {
-                console.log('There was a problem fetching the beers.');
-            }
-            
-        }
+    
 
-        fetchData();
-    }, []);
-
-    console.log(beers);
+    console.log(beersArray);
 
     const handleClick = (e) => {
         let item = e.currentTarget.querySelector('.details');
@@ -33,7 +19,7 @@ const Accordion = () => {
     
     return (
         <div className="beer-container">
-            { beers.map( beer => 
+            { beersArray.map( beer => 
                 <AccordionItem
                     handleClick={handleClick}
                     abv={beer.abv} 
