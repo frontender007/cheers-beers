@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
 $color-primary: #003366;
 $color-heading-text: #ffffee;
 $font-size-base: 16px;
@@ -11,6 +13,7 @@ $font-size-base: 16px;
 
 body {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -50,7 +53,7 @@ header {
   display: none;
   transition: transform 0.5s ease-in-ou;
   padding: 5%;
-  height: 0; 
+  height: auto;
 }
 
 
@@ -65,16 +68,23 @@ header {
     padding: 1%;
     margin: 1%;
 
+    h1, h3 {
+      color: $color-primary;
+    }
+
     @media screen and(max-width: 1200px) {
       width: 29%;
+      margin-top: 2%;
     }
 
     @media screen and(max-width: 1000px) {
       width: 46%;
+      margin-top: 3%;
     }
 
     @media screen and(max-width: 768px) {
       width: 96%;
+      margin-top: 5%;
     }
   }
 }

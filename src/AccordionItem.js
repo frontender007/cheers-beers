@@ -4,9 +4,9 @@ const AccordionItem = ({handleClick, name, tagline, first_brewed, description}) 
         <div className="beer" onClick={handleClick}>
             <h2>{name}</h2>
             <div className="details">
-                <h4>{tagline}</h4>
-                <h4>{first_brewed}</h4>
-                <p>{description}</p>
+                <h3>{tagline}</h3>
+                <h4>Date first brewed: {first_brewed}</h4>
+                <p>Description: {description}</p>
             </div>
         </div>
     )
