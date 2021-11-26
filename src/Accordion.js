@@ -4,7 +4,6 @@ import AccordionItem from './AccordionItem';
 
 const Accordion = ({beersArray}) => {
 
-    console.log(beersArray);
     const handleClick = (e) => {
         let item = e.currentTarget.querySelector('.details');
        if ( item.style.display === 'block') {
